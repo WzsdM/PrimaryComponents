@@ -1,0 +1,931 @@
+
+/*USERPAGE*/
+
+.body-user{
+	background: linear-gradient(0deg, rgba(149,45,253,1) 0%, rgba(155,116,255,1) 99%);;
+}
+
+.title-user{
+	display: flex;
+	margin: auto;
+}
+
+.cont-salir{
+	background: white ;
+	width: 85px;
+	height: 50px;
+	margin: auto;
+	border-radius: 10px;
+	border-color: white;
+	box-sizing: border-box;
+	border: 4px;
+	justify-content: center;
+	display: flex;
+}
+
+.salir,.eliminar{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	font-weight: bold;
+	color: darkgray;
+	margin: auto;
+	margin-left: 25%;
+	margin-top: 15%;
+}
+
+.cont-salir:hover{
+background: lightgrey;
+transition: 0.3;
+}
+
+/*Formulario*/
+
+.content-form {
+	border-radius: 50px;
+	background-image:
+    linear-gradient(90deg, rgba(18, 140, 241, 1) 0%, rgba(0,187,255,0) 100%),
+    url('../Resources/soporte.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	font-weight: 100%;
+	height: 100%;
+	margin-top: 8%;
+	margin-left:8% ;
+	margin-right:8%;
+	justify-content: left;
+}
+
+.formulario{
+	width: 40%;
+	height: 32.65%;
+	position: absolute;
+	overflow: hidden; 	
+	justify-content: left;
+}
+
+.formulario .container-fluid .row{
+	display: flex;
+	justify-content: center;
+	vertical-align: middle;
+	margin-top: 5%;
+	margin-bottom: 5%;
+		margin-right: 5%;
+	margin-left: 5%;
+}
+
+.formulario .container-fluid .row .col{
+	text-align: left;
+	color: white;
+	vertical-align: middle;
+	font-size: 95%;
+	font-weight: bold;
+}
+
+.formulario .container-fluid .row .col textarea{
+margin-left: 0%;
+border-color: black;
+height: 35%;
+width: 96.25%;
+resize: none;
+box-shadow: 0 0 0 2px #000,
+							0px 0px 0px;
+}
+
+.formulario .container-fluid .row .col input,select{
+text-align: center;
+border-color: black;
+box-shadow: 0 0 0 2px #000,
+							0px 0px 0px;
+}
+
+.formulario .container-fluid .row .col select{
+	justify-content: center;
+	margin-left: 5%;
+}
+
+.formulario .container-fluid .row .col H2{
+	text-align: center;
+	font-size: 158%;
+	color: white;
+}
+
+.enviar{
+margin-top: 9% ;
+margin-left: 25%;
+width: 35%;
+height: 15.31%;
+font-size: 101.3%;
+background-color: white;
+border-radius: 11%;
+box-shadow: 0 0 0 2px #000,
+							0px 0px 0px;
+}
+
+.enviar:hover{
+	transition: 0.7s;
+	background-color: lightgrey;
+	color: gray;
+}
+
+/*Reel Preguntas*/
+
+.contAc{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;	
+	height: 400px;
+	width: 100%;
+	margin-top: 3%;
+}
+
+details{
+	display: flex;
+	position: absolute;
+	background: #D4D2D2;
+	margin-right: 200px;
+	margin-left: 200px;
+	margin-top: 2px;
+	margin-bottom: 3.5px;	
+	border-radius: 9px;
+	cursor: pointer;
+	box-sizing: border-box;
+	border: solid 3.5px ;
+	border-top: transparent;
+	border-left: transparent;
+	border-right: transparent;
+  transition: background 0.2s;     	
+}
+details:hover{
+	border: solid 9px ;
+	border-top: transparent;
+	border-left: transparent;
+	border-right: transparent;
+	background:linear-gradient(0deg, rgba(139,61,228,1) 0%, rgba(211,178,255,0) 100%);
+	transition: 0.15s;
+	border-color: rgba(119,27,224,1);
+    box-sizing: border-box;    
+}
+
+#rpt{
+	font-size: 20px;
+	height: 70px;
+	text-align: justify;
+	margin-bottom: 2px;
+	background-color: rgba(255,255,255,0.5);
+
+}
+p{
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: -2px;
+}
+summary{
+	position: absolute;
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+	position: relative;
+    outline: none;
+    cursor: pointer;
+    padding-bottom: 17px;
+	list-style: none;	
+	font-family: Lucida Bright;
+	font-size: 25px;
+	margin-left: 13px;
+	margin-top: 13px;
+}
+
+summary::after{
+	float: right;
+	position: relative;		
+	display: inline-table;
+	margin-top: 2px;
+	height: 30px;
+	width: 35px;
+	content: "";
+	background-image: url('../Resources/triAbajo.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;	
+	margin-right: 20px;
+	transition: 0.25s ;
+}
+
+details[open] summary::after{
+	transition: 0.25s;
+    content: "";
+    background-image: url('../Resources/triArriba.png');
+}
+details.styled {
+	position: relative;
+	background-color: rgba(212,210,210,1);
+	display: block;
+    user-select: none; 	
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.6s;
+	max-height: 88px;
+	overflow: hidden;	
+}
+
+details[open].styled {
+	transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.87s;
+	max-height: 500px;
+}
+
+details[open].footer{
+	margin-top: 10%;
+}
+
+/*login*/
+
+.body-login{
+	background-image: url("../Resources/fondoLogin.jpg");
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+.border-top{
+	  -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(38,38,38,0);
+    text-align: left;
+    font-family: Muli,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-weight: 400;
+    line-height: normal;
+    width: 70%;
+    margin: auto;
+    margin-top: 2.5%;
+    font-size: .875rem;
+    pointer-events: auto;
+    color: #262626;
+    box-sizing: border-box;
+    outline: 0;
+    border-top: 1px solid #dee2e6!important;
+}
+/*Inicio de sesion*/
+.title{
+	    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(38,38,38,0);
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 1000;
+    line-height: normal;
+    font-size: 20px;
+    pointer-events: auto;
+    color: #fff!important;
+    box-sizing: border-box;
+    outline: 0;
+    margin: auto;
+    margin-top: 2.5%;
+}
+
+/*"olviaste contra"*/
+.link-buttom{
+	    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(38,38,38,0);
+    font-family: Muli,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    pointer-events: auto;
+    text-align: center!important;
+    box-sizing: border-box;
+    outline: 0;
+    text-decoration: none;
+    font-style: normal!important;
+    font-weight: 700!important;
+    line-height: 100%!important;
+    font-size: 14px;
+    color: #16a2ff!important;
+    background: 0 0;
+    cursor: pointer;
+}
+.btn{
+	-webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(38,38,38,0);
+    pointer-events: auto;
+     box-sizing: border-box;
+    outline: 0;
+    overflow: visible;
+    text-transform: none;
+    -webkit-appearance: button;
+    font-size: 14px;
+    font-style: normal!important;
+    font-weight: 700!important;
+    line-height: 100%!important;
+    border: solid;
+    margin: auto;
+    margin-top: 5%;
+    font-family: Muli,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border-radius: 999px;
+    cursor: pointer;
+    border-width: 2px;
+    display: block;
+    width: 30%;
+    height: 10%;
+    transition: .25s linear;
+}
+/*login*/
+#ing-usuario{
+	    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(38,38,38,0);
+    pointer-events: auto;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    overflow: visible;
+    color: black;
+    outline: 0;
+    width: 60%!important;
+    border: 1px solid #d9d9d9;
+    height: 40px;
+    border-radius: 4px;
+    padding: 11px 8px;
+    line-height: 18px;
+    box-sizing: border-box;
+    display: inline-flex;
+    margin-top: 11px;
+    margin-bottom: 11px;
+}
+.blanco{
+	    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(38,38,38,0);
+    text-align: center;
+    font-family: Muli,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-weight: 400;
+    line-height: normal;
+    font-size: 20px;
+    pointer-events: auto;
+    color: white;
+    box-sizing: border-box;
+    outline: 0;
+    margin-bottom: 7px!important;
+    margin-top: 21px!important;
+}
+/*footer iniciosesion*/
+.text-center{
+	    margin-top: 40px;
+}
+.register{
+	    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(38,38,38,0);
+    font-family: Muli,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-weight: 400;
+    line-height: normal;
+    font-size: 16px;
+    pointer-events: auto;
+    color: #fff;
+    text-align: center!important;
+    box-sizing: border-box;
+    outline: 0;
+    margin-top: 15px;
+}
+
+#btn--login-facebook{
+	    
+    color: #fff!important;  
+    background-color: #0068ad;
+    border: solid transparent;
+}
+
+.cdk-overlay-pane{
+	   -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(38,38,38,0);
+    text-align: left;
+    font-family: Muli,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-weight: 400;
+    line-height: normal;
+    color: #262626;
+    font-size: .875rem;
+    outline: 0;
+    margin: auto;
+    box-sizing: border-box;
+    z-index: 1000;   
+    max-height: 100%;
+    max-width: 686px!important;    
+    pointer-events: auto;
+    width: 600px;
+    justify-content: center;
+}
+.mat-dialog-container{
+	    
+    -webkit-tap-highlight-color: rgba(38,38,38,0);
+    text-align: left;
+    font-size: 1rem;
+    font-family: Muli,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-weight: 400;
+    line-height: normal;
+    pointer-events: auto;
+    background-color: rgba(0,0,0, 0.6);
+    display: flex;
+    overflow: auto;
+    outline: 0;
+    width: 100%;
+    height: 100%;
+    color: #262626;
+    border-radius: 30px;
+    
+    box-sizing: border-box;
+    box-shadow: 0 4px 20px rgba(51,51,51,0.7);
+    transform: none;
+    justify-content: center;
+}
+
+/*Body*/
+body{
+	background:#F5EEF8 ;
+	display: flex;
+	width: 100%;
+	min-width: 100%;
+	max-width: 100%;
+	flex-direction: column;
+	position: relative;
+	min-height: 100vh;
+	overflow-x: hidden;
+}
+
+
+/* width scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track scrollbar*/
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle  scrollbar*/
+::-webkit-scrollbar-thumb {
+  background: #128CF1;
+}
+
+::-webkit-scrollbar-{
+	shape-margin: 1px;
+}
+
+/*Barra de navegación*/
+
+.body-menu{
+	color: black;
+}
+
+.navbar a{
+	display:block;
+	padding:0 15px;
+	line-height:50px;
+	text-align: center;
+	color:#000;
+	width: 100%;
+	box-sizing:border-box;
+	text-decoration: none;
+	padding: 0;
+	list-style: none;
+	margin-left: 0%;
+}
+
+.navbar{
+border: none;
+height: 100%;
+width: 100%;
+margin: 0;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+position: absolute;
+display: block;
+}
+
+.container-navbar{
+height: 100%;
+width: 100%;
+display: flex;
+color: black;
+margin: auto;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+overflow: hidden;
+}
+
+.navbar-brand{
+	justify-content: center;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: auto;
+}
+
+.logo{
+	display: flex;
+	margin: auto;
+	height: 100%;
+}
+
+.ic{
+	color: white;
+	display: flex;
+	margin-right: 7px;
+}
+
+.navbar-header{
+	background-color: black;
+	width: 15%;
+	height: 100%;
+	display: flex;
+}
+.navbar-nav {
+	list-style: none;
+	background-color:black;
+	border-color: trans;
+	width: 85%;
+	height: 100%;
+	display: flex;
+	padding: 0;
+}
+
+.navbar-nav li a{
+	color: white;
+	font-size: 126.67%;
+	font-weight: bold;
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	transition: 0.3s;
+}
+
+.navbar-nav .active, .navbar-nav .activee {
+  width: 20%;
+  text-align: center;
+	background: black;
+}
+
+/*lo q he agregado*/
+
+li.activee a{
+	box-sizing: border-box;
+	color: white;
+	font-size: 126.67%;
+	font-weight: bold;
+	text-decoration: none;
+	position: relative;
+	width: 30%;
+	height: 100%;
+	transition: ease-out 0.3s;
+	background: black;
+	
+	padding: 0;
+	
+}
+li.activee a:hover:not(.navbar-nav .activee){
+	background: radial-gradient(circle at 87.5% 12.5%, #de61bc 0, #cc55bf 12.5%, #b649c1 25%, #9c3fc3 37.5%, #7b36c5 50%, #4d31c7 62.5%, #0030c9 75%, #0030ca 87.5%, #0032cb 100%);
+	box-sizing: border-box;
+  border-radius: 100%;
+  font-size: 126.67%;
+	font-weight: bold;
+	text-decoration: none;
+	position: relative;
+  width: 25%;
+  height: 60px;
+  transition: 0.52s;
+  padding: 6.5px;
+  margin-top: 2%;
+  
+
+}
+/*******/
+
+.navbar-nav a:hover:not(.navbar-nav .active) {
+	background: #128CF1;
+	transition: 0.3s;
+	padding: 10%;
+}
+
+.fa-cart-shopping{
+	margin-top: 26.5px;
+	color: white;
+	display: block;
+	
+}
+
+
+
+/*Título animado*/
+.container-animado{
+	display: flex;
+	margin: auto;
+	width: 80%;
+	max-width: 100%;
+	height: 7%;
+	color: #000;
+	font-size: 188%;
+	line-height: 140%;
+	overflow: hidden;
+	font-size-adjust: 0.58;
+}
+
+.container-animado ul {
+	list-style: none;
+	color: #128CF1;
+	animation: mover 7s infinite;
+	font-weight: bold;
+	resize: both;
+}
+
+.container-animado p{
+	resize: both;
+	margin-left: 15%;
+}
+
+@keyframes mover {
+
+  0%{ margin-top: 0; }
+  10%{ margin-top: 0; }
+  15%{ margin-top: -40px; }
+  25%{ margin-top: -40px; }
+  30%{ margin-top: -80px; }
+  35%{ margin-top: -80px; }
+  45%{ margin-top: -120px; }
+  50%{ margin-top: -120px; }
+  55%{ margin-top: -80px; }
+  65%{ margin-top: -80px; }
+  70%{ margin-top: -40px; }
+  75%{ margin-top: -40px; }
+  85%{ margin-top: 0; }
+
+}
+
+/*Pág. "Nosotros"*/
+
+.historia{
+width: 80%;
+height: 25%;
+overflow: hidden; 	
+margin: auto;
+	
+}
+
+.historia .img-tres{
+	width: 100%;
+	position: inherit;
+}
+
+.separador {
+	background-color: black;
+	margin: 0;
+	display: block;
+}
+
+.container-grid{
+	width: 90%;
+	max-width: 70%;
+	margin-left: 16.5%;
+	margin-bottom: 22%;
+	display: grid;
+	grid-gap: 2.2%;
+	grid-template-columns: repeat(2,1fr);
+	grid-template-rows: repeat(3, auto);
+}
+
+.container-grid .title,.row .row1{
+	background: #1468B8;
+	height: 17%;
+	grid-row-start: 1;
+	grid-row-end: -1;
+}
+
+.container-grid .row .row1 H1{
+	color: white;
+	justify-content: center;
+	text-align: center;
+	align-content: center;
+}
+
+.container-grid .row .row2 H4{
+	color: white;
+	justify-content: center;
+	text-align: justify;
+	align-content: middle;
+	margin-top: 2.5%;
+	font-size: 105%;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+.container-grid .row{
+	width: 100%;
+}
+
+.container-grid .content,.row2{
+	background: #3192EE;
+	height: 80%;
+	justify-content: center;
+	vertical-align: middle;
+	grid-row-start: 1;
+	grid-row-end: -1;
+	margin-top: 1%;
+}
+
+.lista-valores {
+	list-style: none;
+	font-size: 101.34%;
+}
+
+.aside{
+	width: 95%;
+	height: 240px;
+	overflow: hidden;
+	border-radius: 25%;
+}
+.asideb{
+	width: 95%;
+	height: 240px;
+	overflow: hidden;
+	justify-content: right;
+	border-radius: 25%;
+}
+
+.aside img{
+	width: 100%;
+}
+.asideb img{
+	justify-content: right;
+	width: 100%;
+}
+
+.container-grid img:hover{
+	transition: 1s;
+	opacity: 0.9;
+}
+
+
+/*Social Bar*/
+
+.social-bar{
+	width: 100%;
+	max-width: 50px;
+	position: fixed;
+	left: 0;
+	top: 25%;
+}
+.social-bar a{
+	display: block;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+	position: relative;
+	transition: all 500ms ease;
+	color: #fff;
+}
+.social-bar a:hover{
+	background: #1c1c1c;
+}
+.social-bar .fa-facebook{
+	background: #3b5998;
+	border-radius: 0 20% 0 0;
+}
+.social-bar .fa-twitter{
+	background: #00acee;
+	border-radius: 0 0 20% 0;
+}
+
+.social-bar #title{
+	position: absolute;
+	background: #1c1c1c;
+	padding: 0px 8px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 3px;
+	font-size: 15px;
+	top:12px; left: 0px;
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
+	z-index: -1;
+}
+.social-bar a:hover #title{
+	opacity: 1;
+	visibility: visible;
+	left: 64px;
+}
+.social-bar #title:after{
+	position: absolute;
+	content: '';
+	border-left: 7px solid transparent;
+	border-right: 6px solid #1c1c1c;
+	border-top: 7px solid transparent;
+	border-bottom: 7px solid transparent;
+	right: 100%;
+	top: 8px;
+}
+#btn-social{
+	display: none;
+}
+.fa-play{
+	cursor: pointer;
+	transition: all 0.4s;
+	font-size: 12px;
+	margin-bottom: 5px;
+	display: inline-block;
+	transform: rotate(180deg);
+	color: #49b0e6;
+}
+#btn-social:checked ~ .fa-play{
+	transform: rotate(0deg);
+}
+.icon-social{
+	transition: all 0.4s;
+	transform: translateX(0%);
+}
+#btn-social:checked ~ .icon-social{
+	transform: translateX(-100%);
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.0);
+}
+/*Footer*/
+
+.footer {
+	background: linear-gradient(0deg, rgba(194,194,194,1) 0%, rgba(255,255,255,0) 100%);
+	width: 100%;
+	display: flex;	
+	flex-direction: column;
+	height: 200px;
+	padding-left: 10%;
+}
+
+/*Productos*/
+
+.container-products{
+	width: 85%;
+	max-width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 40px;
+	margin: auto;
+	margin-bottom: 20%;
+}
+
+.btn-cart{
+	display: flex;
+	width: 75px;
+	height: 40px;
+}
+
+.container-products .card {
+	width: 250px;
+	height: 450px;
+	border-radius: 2%;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	margin: 1.4%;
+	text-align: center;
+	transition: all 0.25s;
+}
+
+.container-products .card:hover{
+	transform: translateY(-4.3%);
+	box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container-products .card img{
+	width: 100%;
+	height: 80%;
+}
+
+.container-products .card h4{
+	font-weight: 100%;
+	font-size: 100%;
+	height: 80px;
+	overflow: hidden;
+}
+
+
+
+.btn-default{
+	width: 60px;
+	border-color: black;
+}
+.form-control{
+	border-radius: 20px 20px 20px 20px!important;
+	border-color: black;
+
+}
+
+/*Filtros*/
+
+.formulario-filtros{
+	display: flex;
+	margin: auto;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	justify-content: center;
+}
+
